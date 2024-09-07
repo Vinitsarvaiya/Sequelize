@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "ts",
+    "password": "password123#",
+    "database": "students",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "logging": false
+  },
+  "test": {
+    "username": "ts",
+    "password": "password123#",
+    "database": "students",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "logging": false
+  },
+  "production": {
+    "username": "ts",
+    "password": "password123#",
+    "database": "students",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "logging": false
+  }
+}

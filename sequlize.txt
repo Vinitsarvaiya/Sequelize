@@ -1,0 +1,44 @@
+npm init
+npm i sequelize pg pg-hstore
+sudo npm install -g sequelize-cli
+sequelize init
+
+
+======= migrate ======
+
+sequelize migration:generate --name add-new-field-to-table  ==> create new migrate files
+
+sequelize db:migrate    ===> migrate file to database that was not migrate
+
+sequelize db:migrate:undo   ===> undo migrate that just done
+
+sequelize db:migrate:undo:all   ===> undo all migrate 
+
+sequelize db:migrate:status  ==> check status of migrates
+
+
+
+======= Seeding ========
+
+sequelize seed:generate --name create-demo-post    //or  ===> create seed file
+sequelize seed:create --name create-demo-post
+
+sequelize db:seed --seed 20240905054618-create-demo-post.js   ===> run specific seeder
+
+sequelize db:seed:undo --seed 20240905054618-create-demo-post.js  ==> undo specific seeder
+
+sequelize db:seed:undo   ==> undo last seeder
+
+sequelize db:seed:undo:all ==> undo all seeder
+
+sequelize db:seed:all   ==> run all seeder
+
+
+====== create model ======
+sequelize model:generate --name grade --attributes userId:number,name:string
+sequelize model:create --name grade --attributes userId:number,name:string
+
+
+====== create migrations ======
+sequelize migration:generate --name add-grad-table
+sequelize migration:create --name add-grad-table
